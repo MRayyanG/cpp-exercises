@@ -1,6 +1,6 @@
 # cpp-exercises
 
-A collection of console-based C++ programs built to practice foundational programming concepts like control flow, loops, input validation, and functions before college classes start in September.
+A collection of console-based C++ programs built to practice foundational programming concepts like control flow, loops, input validation, and functions.
 
 ## Projects Overview
 
@@ -30,3 +30,6 @@ An interactive game where the player attempts to guess a randomly generated numb
 * **Modular Design:** Breaking tasks into single-responsibility functions with local variable scopes.
 * **Stream Manipulation:** Controlling text output structure and numeric precision formatting.
 * **Loop Mechanics:** Implementation of traditional conditional loops alongside controlled infinite structures.
+
+## Author
+Created by MRayyanG
