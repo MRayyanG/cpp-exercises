@@ -1,0 +1,29 @@
+#include <iostream>
+#include <ctime>
+#include <random>
+
+int main(){
+
+    srand(time(0));
+    int number = (rand() % 20);
+    int guess = -1;  // initialize it to a number no possible, so the compiler accepts a value
+
+    while(guess != number){
+        do{
+        std::cout << "Guess the number(0 to 20): ";
+        std::cin >> guess;
+        }while(guess < 0 || guess > 20);
+
+        if(guess < number){
+        std::cout << "*The number is greater\n";
+        }
+
+        if(guess > number){
+        std::cout << "*The number is smaller\n";
+        }
+    }
+
+    std::cout << "You have correctly guessed the number";
+
+    return 0;
+}
