@@ -1,35 +1,50 @@
 # cpp-exercises
 
-A collection of console-based C++ programs built to practice foundational programming concepts like control flow, loops, input validation, and functions.
+A collection of C++ programs practicing the basics like loops, if-else statements, functions, and getting user input to work properly.
 
-## Projects Overview
+## Projects
 
 ### 1. Menu-Driven Calculator (`Console_Calculator.cpp`)
-A modular calculator application that utilizes an infinite `while(true)` loop to remain active until the user chooses to exit. 
-* **Key Features:**
-  * Implements input validation to handle and block division-by-zero errors.
-  * Uses `<iomanip>` stream manipulators (`std::fixed`, `std::setprecision`) configured outside the main loop for optimal formatting.
-  * Modularized using distinct functions for mathematical operations.
+A calculator app that keeps running until you choose to exit. You can do basic math operations.
+- Prevents crashes when dividing by zero
+- Makes numbers display nicely with proper decimal places
+- Broken into separate functions instead of one giant mess
+- Uses `while(true)` to make it loop until you exit
 
 ### 2. Rock, Paper, Scissors Game (`rock_paper_scissors.cpp`)
-A terminal-based implementation of the classic game played against a randomized computer opponent.
-* **Key Features:**
-  * Uses a `do-while` game loop that triggers a rematch in the event of a tie.
-  * Handles random number seeding using `srand(time(0))` to ensure unique outcomes every game.
-  * Evaluates win/loss combinations using `if-else if` structures.
+A simple game where you play against the computer. The computer picks randomly.
+- `do-while` loop for replays when there's a tie
+- Random numbers with `srand(time(0))`
+- Uses `if-else if` to check who wins
+- Game logic that actually works
 
 ### 3. Number Guessing Game (`guess_number.cpp`)
-An interactive game where the player attempts to guess a randomly generated number within a 0 to 20 range.
-* **Key Features:**
-  * Utilizes nested loops to trap and filter out invalid user choices.
-  * Initializes the guess variable out-of-bounds (`-1`) to guarantee initial loop execution.
-  * Provides real-time high/low tracking hints to guide the user.
+You try to guess a random number between 0 and 20. The game tells you if you're too high or too low.
+- Nested loops that keep asking until you guess right
+- Traps bad input and asks again
+- Gives hints to help you figure it out
+- Simple but works
 
-## Core Concepts Practiced
-* **Input Validation:** Trapping user input with conditional loops (`do-while`) to enforce valid data boundaries.
-* **Modular Design:** Breaking tasks into single-responsibility functions with local variable scopes.
-* **Stream Manipulation:** Controlling text output structure and numeric precision formatting.
-* **Loop Mechanics:** Implementation of traditional conditional loops alongside controlled infinite structures.
+## How to Run
+
+**Compile and run any of these:**
+
+```bash
+g++ Console_Calculator.cpp -o calculator
+./calculator
+```
+
+```bash
+g++ rock_paper_scissors.cpp -o rps
+./rps
+```
+
+```bash
+g++ guess_number.cpp -o guessing_game
+./guessing_game
+```
+
+You need g++ installed (comes with most Linux/Mac systems, or MinGW on Windows).
 
 ## Author
-Created by MRayyanG
+Made by MRayyanG
